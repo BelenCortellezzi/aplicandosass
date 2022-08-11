@@ -1,0 +1,135 @@
+$color_principal: yellow;
+
+
+.logo-principal {
+    text-align: center;
+    background-color: $color_principal;
+    padding: 20px;
+    background-image: linear-gradient(to right, bisque, darkolivegreen );
+
+}
+
+.logo {
+    height: 250px;
+    transform: skewY(3deg); 
+}
+
+.header {
+    text-align: center;
+}
+
+.header li {
+    display: inline-block;
+    background-color: $color_principal;
+    padding: 10px;
+    margin: 30px;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.imgchica {
+    width: 270px;
+}
+
+.imagenmedia {
+    width: 600px;
+}
+
+.imag {
+    width: 600px;
+    height: 387px;
+
+}
+
+.logos {
+    width: 50px;
+    height: 50px;
+
+}
+
+.logo2 {
+    width: 100px;
+    height: 50px;
+
+}
+
+.logo3 {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+#conteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.quienessomos {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+
+}
+
+#titulo {
+    background-color: lemonchiffon;
+    text-align: center;
+    font-size: 50PX;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+}
+
+.titulo__hg {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titulo__texto {
+    text-align: center;
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+
+.perfil__medio {
+    width: 600px;
+    width: 600px;
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 1s;
+
+}
+
+@keyframes efecto { 
+    0%{ width: 100px;}
+    12%{ width: 60px; background-color: darkorange;}
+    25%{ width: 100px; background-color: darkgray;}
+    50%{ width: 500px; background-color: chartreuse;}
+    75%{ width: 200px; background-color: aquamarine;}
+    100%{ width: 100px; background-color: darkgreen;}
+    
+    
+}
+
+#perfil {
+    text-align: center;
+}
+
+
+
+.transition{
+        &:hover{ transform: skew(20deg, 10deg);
+            color:darksalmon;  }
+    }
+
